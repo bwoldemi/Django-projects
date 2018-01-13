@@ -1,4 +1,4 @@
-### this documents guides step by step creating a django project ###
+### This documents guides step by step creating a django project ###
 # creating project mysite
 django-admin startproject mysite
 
