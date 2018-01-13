@@ -74,3 +74,8 @@ python manage.py sqlmigrate polls 0001
 
 # Make the poll app modifiable in the admin¶
 ##  polls/admin.py 
+# Creating templete 
+
+## create a directory under the applcation with the name templates, and then create another directory which similar to the application. The templete html files goes in this directory. 
+ 
+`polls/templates/polls/index.html`
