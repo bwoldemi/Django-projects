@@ -1,14 +1,14 @@
-# This documents guides step by step creating a django project ###
+# Step by step guide for creating a a Django project ###
 ### creating project mysite
 `django-admin startproject mysite`
 
-### check the created project running the server, the default port is 8000
+### Check the created project running the server, the default port is 8000
 `python manage.py runserver`
 
-### to run the server in port  other than the defalut port. 
+### To run the server in port other than the defalut port. 
 `python manage.py runserver 8080`
 
-### to run the server in a certain ip address 
+### To run the server in a certain ip address 
  `python manage.py runserver 0:8000`
 
 # Creating application name: polls 
@@ -20,7 +20,7 @@
 ```
 from django.http import HttpResponse`
 def index(request):
-    `return HttpResponse("Hello, world. You're at the polls index.") 
+     return HttpResponse("Hello, world. You're at the polls index.") 
 ``` 
     
 ### To create a URLconf in the polls directory, create a file called urls.py under polls directory: 
@@ -63,7 +63,7 @@ class Choice(models.Model):
     vote = models.IntegerField(default=0)
  ```
 
-## commit the following command to create the database and the models 
+## Commit the following command to create the database and the models 
 ```
 python manage.py makemigrations polls
 python manage.py sqlmigrate polls 0001
