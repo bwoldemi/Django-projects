@@ -1,17 +1,22 @@
+### this documents guides step by step creating a django project ###
+# creating project mysite
 django-admin startproject mysite
 
-
+# check the created project running the server, the default port is 8000
 python manage.py runserver
 
+# to run the server in port  other than the defalut port. 
 python manage.py runserver 8080
 
+# to run the server in a certain ip address 
  python manage.py runserver 0:8000
 
-	# starting application name "polls"
+### creating application name: polls ###
 python manage.py startapp polls
 
-### configuring polls application ###
+# configuring polls application
 # the index page of polls application 
+
 from django.http import HttpResponse
 
 
@@ -39,7 +44,7 @@ python manage.py sqlmigrate polls 0001
 
  python manage.py createsuperuser
 
-## Make the poll app modifiable in the admin¶
+## Make the poll app modifiable in the adminÂ¶
 ##  polls/admin.py 
 
 
