@@ -36,32 +36,38 @@ urlpatterns = [
 ```
 #  In mysite/urls.py, add an import for django.urls.include and include url file 
 
-`from django.contrib import admin
+```
+from django.contrib import admin
 from django.urls import path, include
 
 
 urlpatterns = [
     path('', include('user.urls')),
     path('admin/', admin.site.urls),
-]`
+]
+```
 
 
 # Creating database for polls app 
 `from django.db import models`
 
 ### Create your models here.
-`class Question(models.Model):
+```
+class Question(models.Model):
     question_text = models.CharField(max_length=100)
     pub_date= models.DateTimeField('date published')
 
 class Choice(models.Model):
     question= models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
-    vote = models.IntegerField(default=0)`
+    vote = models.IntegerField(default=0)
+ ```
 
 ## commit the following command to create the database and the models 
-`python manage.py makemigrations polls
-python manage.py sqlmigrate polls 0001`
+```
+python manage.py makemigrations polls
+python manage.py sqlmigrate polls 0001
+```
 
 # Crating the supper user 
 `python manage.py createsuperuser`
