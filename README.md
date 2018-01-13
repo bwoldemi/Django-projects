@@ -1,6 +1,6 @@
 # This documents guides step by step creating a django project ###
 ### creating project mysite
-django-admin startproject mysite
+`django-admin startproject mysite`
 
 ### check the created project running the server, the default port is 8000
 python manage.py runserver
