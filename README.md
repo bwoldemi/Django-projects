@@ -17,9 +17,9 @@
 ### configuring polls application
 ### on views.py create a method index which handles the view 
 
-`from django.http import HttpResponse
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")`
+`from django.http import HttpResponse`
+`def index(request):`
+    `return HttpResponse("Hello, world. You're at the polls index.")`
     
 ### To create a URLconf in the polls directory, create a file called urls.py under polls directory: 
 
